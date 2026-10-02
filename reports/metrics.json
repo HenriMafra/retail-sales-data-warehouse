@@ -1,0 +1,150 @@
+{
+  "figures": {
+    "revenue_by_month": "reports/figures/revenue_by_month.png",
+    "revenue_by_store": "reports/figures/revenue_by_store.png",
+    "revenue_by_category": "reports/figures/revenue_by_category.png",
+    "hourly_demand_by_store": "reports/figures/hourly_demand_by_store.png",
+    "quantity_distribution": "reports/figures/quantity_distribution.png",
+    "model_comparison": "reports/figures/model_comparison.png",
+    "confusion_matrix": "reports/figures/confusion_matrix.png",
+    "feature_importance": "reports/figures/feature_importance.png",
+    "regression_scatter": "reports/figures/regression_scatter.png"
+  },
+  "business": {
+    "rows": 149116,
+    "columns": 11,
+    "date_min": "2023-01-01",
+    "date_max": "2023-06-30",
+    "total_revenue": 698812.33,
+    "total_quantity": 214470,
+    "stores": 3,
+    "products": 80,
+    "categories": 9,
+    "top_store": {
+      "name": "Hell's Kitchen",
+      "revenue": 236511.17
+    },
+    "top_category": {
+      "name": "Coffee",
+      "revenue": 269952.45
+    },
+    "top_product_by_revenue": {
+      "name": "Barista Espresso",
+      "revenue": 91406.2
+    },
+    "top_product_by_quantity": {
+      "name": "Brewed Chai tea",
+      "quantity": 26250
+    },
+    "top_weekday": {
+      "name": "Monday",
+      "quantity": 31231
+    },
+    "peak_hour": {
+      "hour": 10,
+      "quantity": 26713
+    },
+    "monthly_revenue": {
+      "Apr": 118941.08,
+      "Feb": 76145.19,
+      "Jan": 81677.74,
+      "Jun": 166485.88,
+      "Mar": 98834.68,
+      "May": 156727.76
+    }
+  },
+  "classification": [
+    {
+      "modelo": "KNN",
+      "accuracy": 0.7245,
+      "precision": 0.5722,
+      "recall": 0.4987,
+      "f1": 0.5329
+    },
+    {
+      "modelo": "Arvore de Decisao",
+      "accuracy": 0.8233,
+      "precision": 0.7284,
+      "recall": 0.7007,
+      "f1": 0.7143
+    },
+    {
+      "modelo": "Random Forest",
+      "accuracy": 0.8098,
+      "precision": 0.7652,
+      "recall": 0.5722,
+      "f1": 0.6548
+    },
+    {
+      "modelo": "Logistic Regression",
+      "accuracy": 0.7303,
+      "precision": 0.6057,
+      "recall": 0.4135,
+      "f1": 0.4915
+    }
+  ],
+  "best_classification_model": {
+    "modelo": "Arvore de Decisao",
+    "accuracy": 0.8233,
+    "precision": 0.7284,
+    "recall": 0.7007,
+    "f1": 0.7143
+  },
+  "top_features": [
+    {
+      "feature": "num__preco_medio",
+      "importance": 0.6054721380204086
+    },
+    {
+      "feature": "num__transaction_hour",
+      "importance": 0.07505710909729825
+    },
+    {
+      "feature": "num__dia_mes",
+      "importance": 0.06946003116248009
+    },
+    {
+      "feature": "cat__product_category_Bakery",
+      "importance": 0.06873656173242823
+    },
+    {
+      "feature": "num__mes",
+      "importance": 0.046205193986129774
+    },
+    {
+      "feature": "num__dia_semana",
+      "importance": 0.021226717725899673
+    },
+    {
+      "feature": "cat__product_type_Brewed Chai tea",
+      "importance": 0.015631935597529765
+    },
+    {
+      "feature": "cat__product_type_Premium brewed coffee",
+      "importance": 0.014622367721533403
+    },
+    {
+      "feature": "cat__product_type_Gourmet brewed coffee",
+      "importance": 0.011488628288762417
+    },
+    {
+      "feature": "cat__product_type_Barista Espresso",
+      "importance": 0.009536516618556019
+    },
+    {
+      "feature": "cat__store_location_Astoria",
+      "importance": 0.00882293967804683
+    },
+    {
+      "feature": "cat__store_location_Hell's Kitchen",
+      "importance": 0.008563022207358339
+    }
+  ],
+  "regression": {
+    "modelo": "Regressao Linear",
+    "target": "quantidade_vendida",
+    "mae": 1.6091,
+    "rmse": 2.2356,
+    "r2": 0.2464
+  }
+}

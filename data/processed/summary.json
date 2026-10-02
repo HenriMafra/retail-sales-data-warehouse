@@ -1,0 +1,33 @@
+{
+  "raw_rows": 149116,
+  "raw_columns": 11,
+  "date_min": "2023-01-01",
+  "date_max": "2023-06-30",
+  "stores": [
+    "Astoria",
+    "Hell's Kitchen",
+    "Lower Manhattan"
+  ],
+  "categories": [
+    "Bakery",
+    "Branded",
+    "Coffee",
+    "Coffee beans",
+    "Drinking Chocolate",
+    "Flavours",
+    "Loose Tea",
+    "Packaged Chocolate",
+    "Tea"
+  ],
+  "dim_tempo_rows": 2512,
+  "dim_loja_rows": 3,
+  "dim_produto_rows": 80,
+  "fato_vendas_rows": 149116,
+  "ml_rows": 68469,
+  "total_revenue": 698812.33,
+  "total_quantity": 214470,
+  "top_store_by_revenue": "Hell's Kitchen",
+  "top_category_by_revenue": "Coffee",
+  "top_product_type_by_revenue": "Barista Espresso",
+  "peak_hour_by_quantity": 10
+}

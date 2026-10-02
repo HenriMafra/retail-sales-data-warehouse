@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+outputs/
+data/raw/*.zip
+data/raw/__MACOSX/
+data/raw/coffee_shop_sales_raw.csv
+~$*.pptx
